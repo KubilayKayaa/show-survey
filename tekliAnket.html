@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            overflow-x: hidden;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(31, 31, 31, 0.836), rgba(49, 49, 49, 0.733)), url('https://allhdwallpapers.com/wp-content/uploads/2015/06/Istanbul-4.jpg')
+        }
+        
+        .container-fluid {
+            padding: 48px 200px;
+            overflow-y: scroll;
+            background: linear-gradient(0deg, rgba(31, 31, 31, 0.836), rgba(49, 49, 49, 0.733)), url(https://allhdwallpapers.com/wp-content/uploads/2015/06/Istanbul-4.jpg);
+            height: 100vh;
+            width: 100vw !important;
+        }
+        
+        .container-fluid::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .container-fluid::-webkit-scrollbar-thumb {
+            background-color: #ffffff;
+        }
+        
+        .show-question-contents {
+            padding-left: 16px;
+        }
+        
+        .show-question-header {
+            width: 100%;
+        }
+        
+        .continueBtn {
+            margin-top: 30px;
+        }
+        
+        .button {
+            width: 80px !important;
+        }
+        
+        .question-file {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>1</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents">
+                <div class="show-question-radio-content d-flex align-items-center">
+                    <input type="radio" id="radioContent1" name="radioContent">
+                    <label for="radioContent1">Lorem ipsum dolor sit amet, consetetur sadipscing</label>
+                </div>
+                <div class="show-question-radio-content d-flex align-items-center">
+                    <input type="radio" id="radioContent2" name="radioContent">
+                    <label for="radioContent2">Lorem ipsum dolor</label>
+                </div>
+                <div class="show-question-radio-content d-flex align-items-center">
+                    <input type="radio" id="radioContent3" name="radioContent">
+                    <label for="radioContent3">Lorem ipsum dolor sit amet</label>
+                </div>
+                <div class="show-question-radio-content d-flex align-items-center">
+                    <input type="radio" id="radioContent4" name="radioContent">
+                    <label for="radioContent4">Lorem ipsum dolor sit </label>
+                </div>
+                <div class="show-question-radio-content d-flex align-items-center">
+                    <input type="radio" id="radioContent5" name="radioContent">
+                    <label for="radioContent5">Lorem ipsum dolor sit amet, consetetur </label>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>2</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents">
+                <div class="show-question-checkbox-content d-flex align-items-center">
+                    <input type="checkbox" id="checkboxContent1" name="checkboxContent">
+                    <label for="checkboxContent1">Lorem ipsum dolor sit amet, consetetur sadipscing</label>
+                </div>
+                <div class="show-question-checkbox-content d-flex align-items-center">
+                    <input type="checkbox" id="checkboxContent2" name="checkboxContent">
+                    <label for="checkboxContent2">Lorem ipsum dolor</label>
+                </div>
+                <div class="show-question-checkbox-content d-flex align-items-center">
+                    <input type="checkbox" id="checkboxContent3" name="checkboxContent">
+                    <label for="checkboxContent3">Lorem ipsum dolor sit amet</label>
+                </div>
+                <div class="show-question-checkbox-content d-flex align-items-center">
+                    <input type="checkbox" id="checkboxContent4" name="checkboxContent">
+                    <label for="checkboxContent4">Lorem ipsum dolor sit </label>
+                </div>
+                <div class="show-question-checkbox-content d-flex align-items-center">
+                    <input type="checkbox" id="checkboxContent5" name="checkboxContent">
+                    <label for="checkboxContent5">Lorem ipsum dolor sit amet, consetetur </label>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>3</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="show-question-radio-content-with-image d-flex align-items-center flex-column">
+                    <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/70-Online-Survey.jpg" alt="">
+                    <div class="show-question-radio-card d-flex align-items-start">
+                        <input type="radio" id="radioContentImg1" name="radioContentImg">
+                        <label for="radioContentImg1">Lorem ipsum dolor sit amet, consetetur sadipscing</label>
+                    </div>
+                </div>
+                <div class="show-question-radio-content-with-image d-flex align-items-center flex-column">
+                    <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/70-Online-Survey.jpg" alt="">
+                    <div class="show-question-radio-card d-flex align-items-start">
+                        <input type="radio" id="radioContentImg2" name="radioContentImg">
+                        <label for="radioContentImg2">Lorem ipsum dolor sit amet, consetetur sadipscing</label>
+                    </div>
+                </div>
+                <div class="show-question-radio-content-with-image d-flex align-items-center flex-column">
+                    <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/70-Online-Survey.jpg" alt="">
+                    <div class="show-question-radio-card d-flex align-items-start">
+                        <input type="radio" id="radioContentImg3" name="radioContentImg">
+                        <label for="radioContentImg3">Lorem ipsum dolor sit amet, consetetur sadipscing</label>
+                    </div>
+                </div>
+                <div class="show-question-radio-content-with-image d-flex align-items-center flex-column">
+                    <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/70-Online-Survey.jpg" alt="">
+                    <div class="show-question-radio-card d-flex align-items-start">
+                        <input type="radio" id="radioContentImg4" name="radioContentImg">
+                        <label for="radioContentImg4">Lorem ipsum dolor sit amet, consetetur sadipscing</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>4</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-select">
+                    <select>
+                        <option value="0">Seçenekler</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>5</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-input">
+                    <input type="text" placeholder="E-Posta Adresiniz">
+                    <i class="fas fa-eye"></i>
+                    <div class="question-input-text d-flex justify-content-between">
+                        <p>Assistive text</p>
+                        <p>0/00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>6</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-input">
+                    <input type="text" placeholder="Telefon Numaranız">
+                    <i class="fas fa-eye"></i>
+                    <div class="question-input-text d-flex justify-content-between">
+                        <p>Assistive text</p>
+                        <p>0/00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>7</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-longtext">
+                    <textarea cols="30" rows="6" placeholder="Uzun Yanıt"></textarea>
+                    <div class="question-longtext-text d-flex justify-content-between">
+                        <p>Assistive text</p>
+                        <p>0/00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>8</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-shorttext">
+                    <textarea cols="30" rows="6" placeholder="Kısa Yanıt"></textarea>
+                    <div class="question-shorttext-text d-flex justify-content-between">
+                        <p>Assistive text</p>
+                        <p>0/00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>9</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-ranking-radio">
+                    <div class="question-ranking">
+                        <input type="radio" name="questionRanking" value="0">
+                        <input type="radio" name="questionRanking" value="1">
+                        <input type="radio" name="questionRanking" value="2">
+                        <input type="radio" name="questionRanking" value="3">
+                        <input type="radio" name="questionRanking" value="4">
+                    </div>
+                    <div class="question-ranking-text d-flex justify-content-between">
+                        <p>Çok İyi</p>
+                        <p>Çok Kötü</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>10</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-datetime">
+                    <input type="datetime-local">
+                </div>
+            </div>
+        </div>
+        <div class="show-question d-flex align-items-start justify-content-center flex-column">
+            <div class="show-question-header d-flex align-items-center">
+                <h2>11</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</p>
+            </div>
+            <div class="show-question-contents d-flex">
+                <div class="question-file-upload">
+                    <div class="question-file d-flex flex-column justify-content-center">
+                        <label for="file-input"><i class="fas fa-cloud-upload-alt"></i></label>
+                        <input id="file-input" type="file" />
+                        <p class="text-center">Yüklemek istediğiniz <span><b>dosyayı seçin</b></span> <br> veya <br> <b>alana sürükleyin</b> <br><br> Dosya limiti: 10mb</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button continueBtn swiper-button-next">DEVAM</a>
+        </div>
+
+    </div>
+
+    <div class="show-question-completed d-flex align-items-center flex-column hide">
+        <i class="fas fa-check"></i>
+        <p class="completed-header">Anket Başlığı</p>
+        <h2>Anketimizi tamamladınız!</h2>
+        <p>Cevapları göndermek ister misiniz?</p>
+        <a href="#" class="button sendSurvey">GÖNDER</a>
+    </div> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
